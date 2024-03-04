@@ -1,0 +1,21 @@
+def binary_search(arr,x):
+    low=0
+    high=len(arr)-1
+    mid=0
+    while low<=high:
+        mid=(low+high)//2
+        if(arr[mid]<x):
+            low=mid+1
+        elif(arr[mid]>x):
+            high=mid-1
+        else:
+            return mid
+    return -1
+arr=["apple","banana","carrot","graphs"]
+x="graphs"
+result=binary_search(arr,x)
+if result!=-1:
+    print("the element is in ",str(result),"position")
+else:
+    print("the element is not found ")
+    

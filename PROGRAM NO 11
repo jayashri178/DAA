@@ -1,24 +1,13 @@
+def copy_str(x, y):
+	if len(y) == 0:
+		return x
+	else:
+		c = copy_str(x, (y)[1:-1])
+		return c
 
 
-def bubbleSort(array):
-    
-  for i in range(len(array)):
-
-   
-    for j in range(0, len(array) - i - 1):
-
-     
-      if array[j] > array[j + 1]:
-
-       
-        temp = array[j]
-        array[j] = array[j+1]
-        array[j+1] = temp
+x = input("hello")
+y = input("no")
+print(copy_str(x, y))
 
 
-data = [-2, 45, 0, 11, -9]
-
-bubbleSort(data)
-
-print('Sorted Array in Ascending Order:')
-print(data)

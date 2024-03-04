@@ -1,0 +1,5 @@
+a=[1,2,3,4,2,23,75,24,55]
+c=sorted(a)
+print("the soreted array",a)
+print("the highest value",c[-1])
+print("the lowest value",c[0])

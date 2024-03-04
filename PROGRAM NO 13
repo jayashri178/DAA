@@ -1,0 +1,4 @@
+str="jaya"
+c=str[1:]
+print(c)
+

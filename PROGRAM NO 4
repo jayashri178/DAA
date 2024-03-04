@@ -1,0 +1,5 @@
+arr=[23,34,76,45,56,77,45,34,88]
+c=sorted(arr)
+print("he largest number of rhe array is :",arr[-1])
+
+    
